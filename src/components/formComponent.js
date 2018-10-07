@@ -27,6 +27,7 @@ class FormComponent extends React.Component {
                 ...this.state
             })
         })
+            .then(() => alert('fetch was done!'))
             .then(() => navigateTo(form.getAttribute("action")))
             .catch(error => alert(error));
     };
