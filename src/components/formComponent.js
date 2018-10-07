@@ -24,7 +24,7 @@ class FormComponent extends React.Component {
         //     "form-name": form.getAttribute("name"),
         //     ...this.state
         // });
-        console.log('bodi: ' + bodi);
+        //console.log('bodi: ' + bodi);
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
