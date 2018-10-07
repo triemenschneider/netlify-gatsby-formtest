@@ -20,10 +20,10 @@ class FormComponent extends React.Component {
         e.preventDefault();
         // console.log('jo!');
         const form = e.target;
-        const bodi = encode({
-            "form-name": form.getAttribute("name"),
-            ...this.state
-        });
+        // const bodi = encode({
+        //     "form-name": form.getAttribute("name"),
+        //     ...this.state
+        // });
         console.log('bodi: ' + bodi);
         fetch("/", {
             method: "POST",
