@@ -23,8 +23,8 @@ class FormComponent extends React.Component {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({
-            "form-name": form.getAttribute("name"),
-            ...this.state
+                "form-name": form.getAttribute("name"),
+                ...this.state
             })
         })
             .then(() => navigateTo(form.getAttribute("action")))
@@ -42,8 +42,8 @@ class FormComponent extends React.Component {
                     data-netlify-honeypot="bot-field"
                     onSubmit={this.handleSubmit}
                     >
-                    {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                    <input type="hidden" name="form-name" value="formTest" />
+                    {/* The `form-name` hidden field is required to support form submissions without JavaScript
+                    <input type="hidden" name="form-name" value="formTest" /> */}
                     <p hidden>
                         <label>
                         Don’t fill this out:{" "}
