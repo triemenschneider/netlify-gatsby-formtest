@@ -18,18 +18,24 @@ class FormComponent extends React.Component {
 
     handleSubmit = e => {
         e.preventDefault();
-        const form = e.target;
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({
-                "form-name": form.getAttribute("name"),
-                ...this.state
-            })
-        })
-            .then(() => alert('fetch was done!'))
-            .then(() => navigateTo(form.getAttribute("action")))
-            .catch(error => alert(error));
+        console.log('jo!');
+        // const form = e.target;
+        // const bodi = encode({
+        //     "form-name": form.getAttribute("name"),
+        //     ...this.state
+        // });
+        // console.log('bodi: ' + bodi);
+        // fetch("/", {
+        //     method: "POST",
+        //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        //     body: encode({
+        //         "form-name": form.getAttribute("name"),
+        //         ...this.state
+        //     })
+        // })
+        //     .then(() => alert('fetch was done!'))
+        //     .then(() => navigateTo(form.getAttribute("action")))
+        //     .catch(error => alert(error));
     };
 
     render() {
