@@ -42,7 +42,7 @@ class FormComponent extends React.Component {
         return (
             <div>
                 <form
-                    name="formTest"
+                    name="Form Test"
                     method="post"
                     action="/thanks/"
                     data-netlify="true"
